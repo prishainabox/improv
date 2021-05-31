@@ -5,13 +5,13 @@ function ind(x, y, w = width) {
 
 // get color at a specific index in the pixel array
 // returns [r, g, b]
-function getClr(index, instance = this) {
+function getClr(index, instance = self) {
     return Array(4).fill(index).map((el, ind) => instance.pixels[el + ind]);
 }
 
 // sets or adds to the color of a pixel
 // pass in [r, g, b, a] and index
-function setClr(clr, index, instance = this) {
+function setClr(clr, index, instance = self) {
     clr.forEach((el, ind) => {
         instance.pixels[index + ind] = el;
     });
@@ -20,7 +20,7 @@ function setClr(clr, index, instance = this) {
 // draws a masked texture
 // according to msk image with dimensions width by height
 // and function changeClr([r,g,b,a] to change pixel color
-function maskedTexture(msk, changeClr, sourceImg = this) { 
+function maskedTexture(msk, changeClr, sourceImg = self) { 
     msk.loadPixels();
     loadPixels();
     for (let x = 0; x < width; x++) {
