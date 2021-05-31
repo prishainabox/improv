@@ -1,4 +1,5 @@
 let counter = 0;
+const self = this;
 p5.disableFriendlyErrors = true;
 
 function setup() {
