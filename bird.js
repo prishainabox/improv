@@ -1,0 +1,45 @@
+let bird = function() {
+    const img = createGraphics(width, height);
+    img.background(0);
+    img.noStroke();
+    img.stroke(199);
+    img.strokeWeight(20);
+    img.fill(245);
+    img.beginShape();
+        img.vertex(0, img.height);
+        img.curveVertex(0, img.height);
+        img.curveVertex(75, 228);
+        img.curveVertex(348, 82);
+        img.curveVertex(531, 139);
+        img.curveVertex(410, 193);
+        img.curveVertex(440, 318);
+        img.curveVertex(320, 466);
+        img.curveVertex(493, 606);
+        img.curveVertex(100, 400);
+    img.endShape();
+    
+    img.stroke(199);
+    img.fill(200);
+    img.beginShape();
+        img.vertex(img.width/2, img.height/2);
+        img.curveVertex(184, 206);
+        img.curveVertex(252, 151);
+        img.curveVertex(347, 200);
+        img.curveVertex(269, 307);
+        img.curveVertex(183, 295);
+        img.curveVertex(184, 206);
+        img.curveVertex(194, 206);
+    img.endShape();
+    
+    img.fill(255);
+    img.beginShape();
+        img.vertex(img.width/2, img.height/2);
+        img.curveVertex(206, 244);
+        img.curveVertex(258, 178);
+        img.curveVertex(299, 218);
+        img.curveVertex(247, 269);
+        img.curveVertex(206, 243);
+        img.curveVertex(211, 235);
+    img.endShape();
+    return img;
+};
