@@ -2,7 +2,8 @@ let counter = 0;
 p5.disableFriendlyErrors = true;
 
 function setup() {
-    createCanvas(600, 600);
+    const c = createCanvas(600, 600);
+    c.parent = document.getElementById("canvas-parent");
     background(156, 0, 199);
     rectMode(CENTER);
     randomSeed(31);
