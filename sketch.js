@@ -15,6 +15,5 @@ function draw() {
         counter++;
     } else {
         noLoop();
-        image(get(), width, height);
     }
 }
